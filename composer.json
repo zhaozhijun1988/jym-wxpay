@@ -13,7 +13,7 @@
         "guzzlehttp/guzzle": "^6.5",
         "psr/log": "^1.1",
         "symfony/serializer": "*",
-        "symfony/property-access": "^5.1"
+        "symfony/property-access": "*"
     },
     "license": "MIT",
     "autoload": {
