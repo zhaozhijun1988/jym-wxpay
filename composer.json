@@ -1,0 +1,29 @@
+{
+    "name": "jmy/wxpay",
+    "authors": [
+        {
+            "name": "zhaozhijun1988",
+            "email": "zhaozhijun1988@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-openssl": "*",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.5",
+        "psr/log": "^1.1",
+        "symfony/serializer": "*",
+        "symfony/property-access": "^5.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jmy\\Wxpay\\": "src/"
+        }
+    },
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0"
+    }
+}
