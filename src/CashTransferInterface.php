@@ -4,13 +4,9 @@
 namespace Jmy\Wxpay;
 
 
+use Jmy\Wxpay\Request\TransferRequest;
+
 interface CashTransferInterface
 {
-    public function getOpenId();
-
-    public function getAmount();
-
-    public function getDes();
-
-    public function getPartnerTradeNo();
+    public function getTransferRequest():? TransferRequest;
 }
