@@ -135,6 +135,7 @@ class Client
             $this->logger->error('wechat result code error');
             $this->logger->error(json_encode($params));
             $this->logger->error($body);
+            throw new $exception($response->getReturnMsg(), $request, $body);
         }
 
         $response->setRaw($body);

@@ -105,8 +105,8 @@ _XML;
             ->setDesc('佣金奖励')
             ->setPartnerTradeNo('100000982014120919616');
         ;
-        $response =  $client->transfer($request);
-        $this->assertEquals(TransferInCompleteResponse::class, get_class($response));
+        $this->expectException(TransferException::class);
+        $client->transfer($request);
 
     }
 
